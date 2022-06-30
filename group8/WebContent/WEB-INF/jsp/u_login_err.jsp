@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h3>ログインに失敗しました。</h3>
 </body>
 </html>
