@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.header{
+	margin:0 auto;
+	max-width : 800px;
+}
+/*最大幅800pxとセンタリング設定*/
+.block_center{
+	max-width: 800px;
+	margin:0 auto;
+}
+/*block_center内でのセンタリング*/
+.block_in_center{
+	margin: 0 auto;
+}
+.font20{
+	font-size: 20px;
+}
+/*ログインテーブルの一設定*/
+.login_table{
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.msg{
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+.text_center{
+	text-align:center;
+}
+.text_right{
+	max-width: 800px;
+	text-align: right;
+}
+/*企業詳細情報時のボックス指定*/
+.companyInfo{
+	max-width: 900px;
+	margin : 0 auto;
+	border: 1px solid #000000;
+}
+.w50{
+	width: 50px;
+}
+.w100{
+	width: 100px;
+}
+.w150{
+	width: 150px;
+}
+.w300{
+	width: 300px;
+}
+.w500{
+	width: 500px;
+}
+.h20 {
+	height: 20px;
+}
+.h30 {
+	height: 30px;
+}
+.h100 {
+	height: 100px;
+}
+.h50 {
+	height: 50px;
+}
+.h1500 {
+	height: 150px;
+}
+.border{
+	border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

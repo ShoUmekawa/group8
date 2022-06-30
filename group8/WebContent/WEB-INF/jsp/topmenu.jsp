@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ログイン</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1></h1>
+<a href = "/group8/LoginServlet">利用者</a>
+
 </body>
 </html>
