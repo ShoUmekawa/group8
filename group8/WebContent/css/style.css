@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import "common.css";
+/*基本的なフォント*/
+.font{
+	font-size:20;
+	color : #000000;
+}
+
+/*メニュー 検索ボタン*/
+.select_user{
+	width: 200px;
+	height: 60px;
+	margin-top: 60px;
+	margin-left: 180px;
+	border: 1px solid #68779a;
+	background: #0099FF;
+	cursor: pointer;
+}
+
+.select_ad{
+	width: 200px;
+	height: 60px;
+	margin-top: 30px;
+	margin-left: 300px;
+	border: 1px solid #68779a;
+	background: #0099FF;
+	cursor: pointer;
+}
+
+h2.box {
+   border-bottom: 1px solid black;
+   padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

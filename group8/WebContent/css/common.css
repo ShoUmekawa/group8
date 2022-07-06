@@ -6,7 +6,7 @@
 /*最大幅800pxとセンタリング設定*/
 .block_center{
 	max-width: 800px;
-	margin:0 auto;
+	margin:40 auto;
 }
 /*block_center内でのセンタリング*/
 .block_in_center{
