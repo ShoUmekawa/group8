@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import ="data.User" %>
+<%@ page import ="scopedata.Account" %>
 <%
-   User user = (User)session.getAttribute("user");
+   Account account = (Account)session.getAttribute("account");
 %>
 <!DOCTYPE html>
 <html>
@@ -21,9 +21,9 @@
 <th width="100">パスワード</th>
 </tr>
 <tr>
-<td><center><%= user.getName() %></center></td>
-<td><%= user.getId() %></td>
-<td><center><%= user.getPass() %></center></td>
+<td><center><%= account.getName() %></center></td>
+<td><center><%= account.getId() %></center></td>
+<td><center><%= account.getPass() %></center></td>
 </tr>
 </table>
 </body>

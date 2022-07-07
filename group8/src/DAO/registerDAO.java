@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import data.User;
+import scopedata.Account;
 
 public class registerDAO {
-	public int execute(User account) {
+	public int execute(Account account) {
 		int f = 0;
 		Connection con = null;
 		try {
