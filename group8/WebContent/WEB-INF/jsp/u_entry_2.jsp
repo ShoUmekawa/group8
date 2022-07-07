@@ -12,7 +12,7 @@
 </head>
 <body>
 <a href = "/group8/LoginServlet">←ユーザ登録</a>
-<h3>ユーザ登録確認</h3>
+<h3>ユーザ登録確認１</h3>
 [登録情報]
 <table border=1>
 <tr>
