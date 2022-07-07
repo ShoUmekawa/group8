@@ -8,6 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import scopedata.Account;
 
 
 @WebServlet("/RegisterServlet")
@@ -26,6 +29,15 @@ public class RegisterServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		String name = request.getParameter("name");
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+
+		HttpSession session = request.getSession();
+		Account account = new Account(name,id,pass);
+		session.setAttribute("Register", account);
+
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/u_entry_2.jsp");
 		dispatcher.forward(request, response);
 	}
