@@ -26,7 +26,7 @@ input{
 		</form>
 		</td>
 		<td><form action="/group8/LoginServlet" method="get">
-			<input type="submit" value="利用者ログイン" class="select_user">
+			<input type="submit" value="管理者ログイン" class="select_user">
 		</form>
 		</td>
 	</tr>
