@@ -43,6 +43,5 @@ input{
 <div class="text_center">
 	ログインIDをお持ちでない方はこちら→<a href="/group8/RegisterServlet">ユーザ登録</a>
 </div>
-</footer>
 </body>
 </html>
