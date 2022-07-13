@@ -29,8 +29,8 @@ public class RegisterServlet extends HttpServlet {
 			Account account = (Account)session.getAttribute("Register");
 			registerDAO rg = new registerDAO();
 			int f = rg.execute(account);
-			if(f == 0) path ="WEB-INF/jsp/registerErr.jsp";
-			else       path ="WEB-INF/jsp/registerDone.jsp";
+			if(f == 0) path ="WEB-INF/jsp/u_entry_1.jsp";
+			else       path ="WEB-INF/jsp/u_entry_3.jsp";
 		}
 		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);

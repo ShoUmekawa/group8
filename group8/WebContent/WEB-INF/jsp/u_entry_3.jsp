@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import ="scopedata.Account" %>
 <%
-   Account account = (Account)session.getAttribute("account");
+   Account account = (Account)session.getAttribute("Register");
 %>
 <!DOCTYPE html>
 <html>

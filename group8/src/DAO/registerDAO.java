@@ -13,8 +13,8 @@ public class registerDAO {
 		Connection con = null;
 		try {
 			Class.forName("org.h2.Driver");
-			con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","0018koji");
-			String sql = "insert into account values(?,?,?)";
+			con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/group8","sa","pass");
+			String sql = "insert into user values(?,?,?)";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1,account.getName());
 			pstmt.setString(2,account.getId());
