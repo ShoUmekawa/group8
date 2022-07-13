@@ -23,6 +23,9 @@
 <td><center><%= account.getPass() %></center></td>
 </tr>
 </table>
-<td colspan="2"><input type="submit" value="利用者ログイン"></td>
+<form action="/group8/RegisterServlet" method="get">
+<td colspan="2">
+<input type="hidden" name="action" value="return">
+<input type="submit" value="利用者ログイン"></td>
 </body>
 </html>

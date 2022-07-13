@@ -24,6 +24,9 @@ public class RegisterServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		if(action == null) {
 			path = "WEB-INF/jsp/u_entry_1.jsp";
+		}else if(action.equals("return")) {
+			path ="WEB-INF/jsp/u_login.jsp";
+
 		}else if(action.equals("re")) {
 			HttpSession session = request.getSession();
 			Account account = (Account)session.getAttribute("Register");
