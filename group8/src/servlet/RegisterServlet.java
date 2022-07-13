@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import DAO.registerDAO;
 import scopedata.Account;
 
 
@@ -23,6 +24,13 @@ public class RegisterServlet extends HttpServlet {
 		String action = request.getParameter("action");
 		if(action == null) {
 			path = "WEB-INF/jsp/u_entry_1.jsp";
+		}else if(action.equals("re")) {
+			HttpSession session = request.getSession();
+			Account account = (Account)session.getAttribute("Register");
+			registerDAO rg = new registerDAO();
+			int f = rg.execute(account);
+			if(f == 0) path ="WEB-INF/jsp/registerErr.jsp";
+			else       path ="WEB-INF/jsp/registerDone.jsp";
 		}
 		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);

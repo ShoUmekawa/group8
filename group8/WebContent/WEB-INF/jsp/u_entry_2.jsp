@@ -26,5 +26,12 @@
 <td><center><%= account.getPass() %></center></td>
 </tr>
 </table>
+
+<form action="/group8/RegisterServlet" method="get">
+<td colspan="2">
+<input type="hidden" name="action" value="re">
+<input type="submit" value="登録"></td>
+</form>
+
 </body>
 </html>
