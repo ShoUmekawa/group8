@@ -7,6 +7,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import DAO.LoginDAO;
+import scopedata.Account;
 @WebServlet("/A_LoginServlet")
 public class A_LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -15,7 +19,22 @@ public class A_LoginServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		request.setCharacterEncoding("UTF-8");
+		String id = request.getParameter("id");
+		String pass = request.getParameter("pass");
+
+		LoginDAO f = new LoginDAO();
+		Account account =f.find(id,pass);
+		HttpSession session = request.getSession();
+		session.setAttribute("Login", account);
+		String path= null;
+		if(account!= null) { //データあり
+			path="WEB-INF/jsp/a_co_list.jsp";
+		}else {             //データなし
+			path="WEB-INF/jsp/a_login.jsp";
+		}
+		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
+		dispatcher.forward(request, response);
 	}
 }
 
