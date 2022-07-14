@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import scopedata.Account;
-public class A_registerDAO {
+public class LoginDAO {
 	public int execute(Account account) {
 		int f = 0;
 		Connection con = null;
@@ -29,15 +29,3 @@ public class A_registerDAO {
 		return f;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
