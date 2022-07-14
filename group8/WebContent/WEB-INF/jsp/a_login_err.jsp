@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="/group/LoginServlet">←利用者ログイン</a>
+<a href="/group/LoginServlet">←管理者ログイン</a>
 <h1>ログインに失敗しました。</h1>
 </body>
 </html>
