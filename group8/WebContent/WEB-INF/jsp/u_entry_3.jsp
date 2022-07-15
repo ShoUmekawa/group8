@@ -18,9 +18,9 @@
 <th width="100">パスワード</th>
 </tr>
 <tr>
-<td><center><%= account.getName() %></center></td>
 <td><center><%= account.getId() %></center></td>
 <td><center><%= account.getPass() %></center></td>
+<td><center><%= account.getName() %></center></td>
 </tr>
 </table>
 <form action="/group8/RegisterServlet" method="get">

@@ -41,12 +41,12 @@ public class RegisterServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		String name = request.getParameter("name");
 		String id = request.getParameter("id");
 		String pass = request.getParameter("pass");
+		String name = request.getParameter("name");
 
 		HttpSession session = request.getSession();
-		Account account = new Account(name,id,pass);
+		Account account = new Account(id,pass,name);
 		session.setAttribute("Register", account);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/u_entry_2.jsp");
