@@ -19,12 +19,12 @@ input{
 <a href="/group8/LoginServlet">←利用者ログイン</a>
 <form action="/group8/RegisterServlet" method="post">
 	<h2 class="text_center box">新規ユーザー登録</h2>
-	氏名<br>
-	<input type="text" name="name" required><br>
 	ID<br>
 	<input type="text" name="id" required><br>
 	パスワード<br>
 	<input type="text" name="pass" required><br>
+	名前<br>
+	<input type="text" name="name" required><br>
 	<input type="submit" value="新規登録">
 </form>
 </body>

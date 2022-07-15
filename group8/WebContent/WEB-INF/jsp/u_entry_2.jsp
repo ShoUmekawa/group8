@@ -16,14 +16,14 @@
 [登録情報]
 <table border=1>
 <tr>
-<th width="80">ユーザ名</th>
-<th width="100">ユーザID</th>
+<th width="80">ユーザーID</th>
 <th width="100">パスワード</th>
+<th width="100">ユーザー名</th>
 </tr>
 <tr>
-<td><center><%= account.getName() %></center></td>
 <td><center><%= account.getId() %></center></td>
 <td><center><%= account.getPass() %></center></td>
+<td><center><%= account.getName() %></center></td>
 </tr>
 </table>
 

@@ -16,9 +16,9 @@ public class registerDAO {
 			con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/group8","sa","pass");
 			String sql = "insert into user values(?,?,?)";
 			PreparedStatement pstmt = con.prepareStatement(sql);
-			pstmt.setString(1,account.getName());
-			pstmt.setString(2,account.getId());
-			pstmt.setString(3,account.getPass());
+			pstmt.setString(1,account.getId());
+			pstmt.setString(2,account.getPass());
+			pstmt.setString(3,account.getName());
 			f=pstmt.executeUpdate();
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
