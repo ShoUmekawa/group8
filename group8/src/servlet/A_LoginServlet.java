@@ -24,9 +24,9 @@ public class A_LoginServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 
 		LoginDAO f = new LoginDAO();
-		Account account =f.findA(id,pass);
+		Account account =f.find(id,pass);
 		HttpSession session = request.getSession();
-		session.setAttribute("Login", account);
+		session.setAttribute("A_Login", account);
 		String path= null;
 		if(account!= null) { //データあり
 			path="WEB-INF/jsp/a_co_list.jsp";

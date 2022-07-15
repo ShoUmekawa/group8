@@ -16,10 +16,10 @@ input{
 </style>
 </head>
 <body>
+<a href="/group8/LoginServlet">ログアウト</a>
 <h2 class="text_center box">利用者メニュー</h2>
 <table>
 	<tr>
-		<a href="/group8/LoginServlet">ログアウト</a>
 		<td>
 			<form action="/group8/#" method="get">
 			<input type="submit" value="🔍検索表示"class="select_user">

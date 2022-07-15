@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import scopedata.A_Account;
 import scopedata.Account;
 
 public class LoginDAO {
@@ -38,8 +39,8 @@ public class LoginDAO {
 		}
 		return account;
 	}
-	public Account findA(String _wid,String _pass) {
-		Account account = null;
+	public A_Account findA(String _wid,String _pass) {
+		A_Account account = null;
 		Connection con = null;
 		try {
 			Class.forName("org.h2.Driver");
@@ -52,8 +53,7 @@ public class LoginDAO {
 			rs.next();
 			String id = rs.getString("id");
 			String pass = rs.getString("pass");
-			String name = rs.getString("name");
-			account = new Account(id,pass,name);
+			account = new A_Account(id,pass);
 		}catch(Exception e) {
 			System.out.print("exception error!");
 			return null;
