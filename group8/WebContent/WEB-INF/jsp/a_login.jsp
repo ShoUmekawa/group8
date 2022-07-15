@@ -20,7 +20,7 @@ input{
 	<br><br>
 	<div class="login_box">
 		<h2 class="text_center box">Administer</h2>
-		<form action="/group8/LoginServlet" method="post">
+		<form action="/group8/A_LoginServlet" method="post">
 			<table class="login_table">
 				<tr class="h20">
 					<th>ID</th><br>

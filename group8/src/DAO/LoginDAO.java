@@ -15,7 +15,36 @@ public class LoginDAO {
 		try {
 			Class.forName("org.h2.Driver");
 			con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/group8","sa","pass");
-			String sql = "select * from group8";
+			String sql = "select * from user";
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, _wid);
+			pstmt.setString(2, _pass);
+			ResultSet rs = pstmt.executeQuery();
+			rs.next();
+			String id = rs.getString("id");
+			String pass = rs.getString("pass");
+			String name = rs.getString("name");
+			account = new Account(id,pass,name);
+		}catch(Exception e) {
+			System.out.print("exception error!");
+			return null;
+		}finally {
+			try {
+				if(con!=null) con.close();
+			}catch(SQLException e) {
+				System.out.print("SQL error!");
+				return null;
+			}
+		}
+		return account;
+	}
+	public Account findA(String _wid,String _pass) {
+		Account account = null;
+		Connection con = null;
+		try {
+			Class.forName("org.h2.Driver");
+			con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/group8","sa","pass");
+			String sql = "select * from administer";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, _wid);
 			pstmt.setString(2, _pass);

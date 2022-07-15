@@ -24,7 +24,7 @@ public class A_LoginServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 
 		LoginDAO f = new LoginDAO();
-		Account account =f.find(id,pass);
+		Account account =f.findA(id,pass);
 		HttpSession session = request.getSession();
 		session.setAttribute("Login", account);
 		String path= null;
