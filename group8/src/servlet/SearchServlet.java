@@ -22,18 +22,18 @@ public class SearchServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String action=request.getParameter("action");
 		String path=null;
-		
+
 		HttpSession session=request.getSession();
 		if(action.equals("menu_jyouken")) {
+			System.out.println("ここ");
 			List<Company> list=new ArrayList<Company>();
 			session.setAttribute("list", list);
-			path="WEB-INF/jsp/companySearch.jsp";
-			
-			
+			path="WEB-INF/jsp/u_search.jsp";
+		}
+
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);
-
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

@@ -19,7 +19,8 @@ public class LoginServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/u_menu.jsp");
+		dispatcher.forward(request, response);
 	}
 
 }

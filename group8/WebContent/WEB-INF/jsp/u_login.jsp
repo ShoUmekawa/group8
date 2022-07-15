@@ -23,7 +23,8 @@ input{
 	<br><br>
 	<div class="login_box">
 		<h2 class="text_center box">利用者ログイン</h2>
-		<form action="/group8/LoginServlet" method="post">
+		<form action="/group8/SearchServlet" method="post">
+		<input type="hidden" name="action" value="menu_jyouke">
 			<table class="login_table">
 				<tr class="h20">
 					<th>ログインID</th><br>
@@ -35,6 +36,7 @@ input{
 				</tr>
 				<tr class="h50">
 					<td colspan="2"><input type="submit" value="ログイン" class="login_button"></td>
+
 				</tr>
 			</table>
 		</form>
