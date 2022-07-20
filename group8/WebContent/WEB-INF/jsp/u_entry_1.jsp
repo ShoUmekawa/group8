@@ -25,7 +25,7 @@ input{
 	<input type="text" name="pass" required><br>
 	名前<br>
 	<input type="text" name="name" required><br>
-	<input type="submit" value="新規登録">
+	<input class="l_btn" type="submit" value="新規登録">
 </form>
 </body>
 </html>

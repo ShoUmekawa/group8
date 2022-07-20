@@ -26,6 +26,23 @@
 	background: #0099FF;
 	cursor: pointer;
 }
+.l_btn{
+	width: 200px;
+	height: 60px;
+	margin-top: 60px;
+	margin-left: 200px;
+	margin-bottom: 30;
+	border: 1px solid #68779a;
+	background: #0099FF;
+	cursor: pointer;
+	color:  #FFFFFF;
+	font-size:20;
+}
+.l_ad{
+	margin-left: 50;
+
+}
+
 
 h2.box {
    border-bottom: 1px solid black;
