@@ -8,6 +8,6 @@
 </head>
 <body>
 <a href="/group/LoginServlet">←利用者ログイン</a>
-<h1>ログインに失敗しました。</h1>
+<p style="color:blue">ログインに失敗しました。</p>
 </body>
 </html>

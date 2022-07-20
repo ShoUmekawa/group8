@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import DAO.LoginDAO;
-import scopedata.Account;
+import scopedata.A_Account;
 @WebServlet("/A_LoginServlet")
 public class A_LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,7 +24,7 @@ public class A_LoginServlet extends HttpServlet {
 		String pass = request.getParameter("pass");
 
 		LoginDAO f = new LoginDAO();
-		Account account =f.find(id,pass);
+		A_Account account =f.findA(id,pass);
 		HttpSession session = request.getSession();
 		session.setAttribute("A_Login", account);
 		String path= null;
