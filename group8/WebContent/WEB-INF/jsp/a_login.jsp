@@ -19,6 +19,7 @@ input{
 <div class="block_center">
 	<br><br>
 	<div class="login_box">
+		<img src="WebContent/img/ログインアイコン.png">
 		<h2 class="text_center box">Administer</h2>
 		<form action="/group8/A_LoginServlet" method="post">
 			<table class="login_table">
