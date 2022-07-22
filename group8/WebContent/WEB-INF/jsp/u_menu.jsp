@@ -21,7 +21,7 @@ input{
 <table>
 	<tr>
 		<td>
-			<form action="/group8/u_search.jsp" method="get">
+			<form action="/group8/SearchServlet" method="get">
 			<input type="submit" value="🔍検索表示"class="select_user">
 		</form>
 		</td>
