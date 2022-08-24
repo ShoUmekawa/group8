@@ -31,7 +31,7 @@ public class A_LoginServlet extends HttpServlet {
 		if(account!= null) { //データあり
 			path="WEB-INF/jsp/a_co_list.jsp";
 		}else {             //データなし
-			path="WEB-INF/jsp/a_login.jsp";
+			path="WEB-INF/jsp/a_login_err.jsp";
 		}
 		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);
