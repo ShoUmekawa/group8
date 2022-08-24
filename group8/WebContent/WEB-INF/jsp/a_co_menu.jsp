@@ -16,11 +16,11 @@ input{
 </style>
 </head>
 <body>
-<a href="/group8/topmenu">←ログアウト</a>
+<a href="/group8/Welcome">←ログアウト</a>
 <h2 class="text_center box">管理者メニュー</h2>
 <table>
 	<tr>
-		<td><form action="/group8/" method="get">
+		<td><form action="/group8/a_co_menu.jsp" method="get">
 				<input type="submit" value="📚登録企業一覧表示" class="select_user">
 			</form>
 		</td>
