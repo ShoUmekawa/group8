@@ -45,7 +45,7 @@ public class LoginDAO {
 		try {
 			Class.forName("org.h2.Driver");
 			con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/group8","sa","pass");
-			String sql = "select * from administer";
+			String sql = "select * from administer where id = ? and pass = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, _wid);
 			pstmt.setString(2, _pass);

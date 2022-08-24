@@ -28,8 +28,8 @@ public class A_LoginServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("A_Login", account);
 		String path= null;
-		if(account!= null) { //データあり
-			path="WEB-INF/jsp/a_co_list.jsp";
+		if(account != null) { //データあり
+			path="WEB-INF/jsp/a_co_menu.jsp";
 		}else {             //データなし
 			path="WEB-INF/jsp/a_login_err.jsp";
 		}
